@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(to bottom, #3a3a3a, #1b1b1b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    background: #2d2d2d;
+    border: 10px solid #8b4513;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Header */
+  h1 {
+    color: #f7d154;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px #8b4513, 4px 4px 0px #f4a460;
+  }
+  
+  /* Timer */
+  .timer {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #00ff00;
+    text-shadow: 2px 2px #8b0000, 4px 4px #ff4500;
+    letter-spacing: 2px;
+  }
+  
+  /* Buttons */
+  .controls button {
+    font-family: 'Press Start 2P', cursive;
+    background: #6b8e23;
+    color: white;
+    border: 3px solid #8b4513;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .controls button:hover {
+    transform: scale(1.1);
+    background: #556b2f;
+    color: #ffd700;
+  }
+  
+  .controls button:active {
+    background: #2e8b57;
+    transform: scale(0.95);
+  }
+  
+  /* Motivational Message */
+  .message {
+    margin-top: 30px;
+    color: #f0e68c;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px #8b4513;
+    padding: 10px;
+    border: 2px dashed #ffd700;
+    background: #3b3b3b;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+    animation: blink 2s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  /* Nostalgic Style */
+  body:before {
+    content: 'Remember: Don\'t scroll or use any distractions. Stay committed!';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #8b0000;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ffd700;
+    animation: bounce 3s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -10px); }
+  }
+  
